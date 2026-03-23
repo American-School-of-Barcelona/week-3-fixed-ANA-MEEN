@@ -35,7 +35,7 @@ def input_task():
         description = request.form["description"]
         status = request.form["status"]
         next_steps = request.form["next_steps"]
-        # TODO: Generate a datetime stamp using datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         # TODO: Append the new task to tasks.csv using csv.DictWriter
         #   fieldnames = ["datetime", "project_title", "title", "description", "status", "next_steps"]
         # TODO: Redirect to the display page using redirect(url_for("display"))
