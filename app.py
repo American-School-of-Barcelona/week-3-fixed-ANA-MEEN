@@ -30,12 +30,11 @@ def display_project(project_title):
 @app.route("/input", methods=["GET", "POST"])
 def input_task():
     if request.method == "POST":
-        # TODO: Read each field from request.form
-        #   project_title = request.form["project_title"]
-        #   title = request.form["title"]
-        #   description = request.form["description"]
-        #   status = request.form["status"]
-        #   next_steps = request.form["next_steps"]
+        project_title = request.form["project_title"]
+        title = request.form["title"]
+        description = request.form["description"]
+        status = request.form["status"]
+        next_steps = request.form["next_steps"]
         # TODO: Generate a datetime stamp using datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         # TODO: Append the new task to tasks.csv using csv.DictWriter
         #   fieldnames = ["datetime", "project_title", "title", "description", "status", "next_steps"]
